@@ -102,7 +102,7 @@ if st.button('Predict Premium Price'):
     with st.sidebar:
         st.header(" Premium Prediction")
         if prediction is not None:
-            st.metric("Predicted Premium", f"${prediction:,.2f}")
-            st.write(f"Model Prediction Range: **${interval[0]:,.2f} - ${interval[1]:,.2f}**")
+            st.metric("Predicted Premium", f"₹{prediction:,.2f}")
+            st.write(f"Model Prediction Range: **₹{interval[0]:,.2f} - ₹{interval[1]:,.2f}**")
         else:
             st.write("Click **Predict Premium** to see results.")
